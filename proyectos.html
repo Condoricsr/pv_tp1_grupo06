@@ -2,120 +2,89 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorador de Proyectos</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Perfiles del Equipo</title>
     <style>
-        .contenedor-proyectos { 
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            }
-            article {
-                border: 1px solid #ccc;
-                padding: 15px;
-                width: 250px;
-                background-color: #f9f9f9;
-                border-radius: 6px;
-            }
-            img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
+        /* Estilos súper básicos */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Cada tarjeta de perfil */
+        .perfil {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            width: 220px;
+            display: inline-block; /* Los coloca uno al lado del otro */
+            text-align: center;
+        }
+
+        /* Tamaño grande para el emoji */
+        .avatar {
+            font-size: 60px;
             margin-bottom: 10px;
-            border-radius: 4px;
+        }
+
+        /* Colores simples para diferenciar roles */
+        .rol-docente {
+            color: #d35400; /* Naranja */
+            font-weight: bold;
+        }
+
+        .rol-alumno {
+            color: #2980b9; /* Azul */
+            font-weight: bold;
+        }
+
+        /* Quitar márgenes a los textos para que quede más compacto */
+        h3, p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <header> 
-        <h1>Gestión de Proyectos Educativos</h1>
-        <nav>
-            <a href="index.html">Inicio</a> | 
-            <a href="proyectos.html">Proyectos</a> | 
-            <a href="perfil.html">Mi Perfil</a>
-        </nav>
-    </header>
-    <main>
-    <aside>
-        <h2>Filtros de búsqueda</h2>
-        <label>Categoría:</label>
-        <select>
-            <option>Base de Datos II</option>
-            <option>Ingles III</option>
-            <option>Programacion Estructurada</option>
-            <option>Laboratorio de Sistemas Operativos</option>
-            <option>Estructura de Datos</option>
-        </select>
-        <br><br>
 
-        <label>Año:</label>
-        <select>
-            <option>2024</option>
-            <option>2025</option>
-            <option>2026</option>
-        </select>
-        <br><br>
-        <label>Estado:</label>
-        <select>
-            <option>En curso</option>
-            <option>Finalizado</option>
-        </select>
-    </aside>
+    <h1>Directorio del Equipo</h1>
 
-    <hr>
-    <section>
-        <h2>Listado de Proyectos</h2>
-        <div class="contenedor-proyectos">
-        <article>
-            <h3>Proyecto: Diseño de Base de Datos</h3>
-            <img src="C:\Users\dory\Downloads\programacion visual\imagenes" alt="servidor de datos">
-            <!--Descripcion-->
-            <p style="font-weight: bold; color: #2c3e50;">Categoría: Base de Datos</p>
-            <a href="detalle.html">Ver detalle</a>
-        </article>
+    <div class="perfil">
+        <div class="avatar">👩‍🏫</div>
+        <h3>Elena Rojas</h3>
+        <p class="rol-docente">Docente</p>
+        <p>Ingeniería de Software</p>
+    </div>
 
-        <hr>
+    <div class="perfil">
+        <div class="avatar">👨‍🏫</div>
+        <h3>Martín Suarez</h3>
+        <p class="rol-docente">Docente</p>
+        <p>Bases de Datos</p>
+    </div>
 
-        <article>
-            <h3>Proyecto: Traduccion Tecnica Ingles III</h3>
-            <img src="C:\Users\dory\Downloads\programacion visual\imagenes" alt="Libros y Diccionarios">
-            <!--Descripcion-->
-            <p style="font-weight: bold; color: #2c3e50;">Categoría: Idiomas</p>
-            <a href="detalle.html">Ver detalle</a>
-        </article>
+    <div class="perfil">
+        <div class="avatar">👩‍💻</div>
+        <h3>Sofía Castro</h3>
+        <p class="rol-alumno">Alumna</p>
+        <p>Frontend</p>
+    </div>
 
-        <hr>
+    <div class="perfil">
+        <div class="avatar">👨‍💻</div>
+        <h3>Diego Torres</h3>
+        <p class="rol-alumno">Alumno</p>
+        <p>Backend</p>
+    </div>
 
-        <article>
-            <h3>Proyecto: Calculadora en C</h3>
-            <img src="C:\Users\dory\Downloads\programacion visual\imagenes" alt="Codigo de Programacion">
-            <!--Descripcion-->
-            <p style="font-weight: bold; color: #2c3e50;">Categoría: Programación</p>
-            <a href="detalle.html">Ver detalle</a>
-        </article>
+    <div class="perfil">
+        <div class="avatar">👩‍🎓</div>
+        <h3>Valentina Paz</h3>
+        <p class="rol-alumno">Alumna</p>
+        <p>Análisis de Datos</p>
+    </div>
 
-        <hr>
-
-        <article>
-            <h3>Proyecto: Instalacin de Linux Debian</h3>
-            <img src="C:\Users\dory\Downloads\programacion visual\imagenes" alt="Terminal de Linux">
-            <!--Descripcion-->
-            <p style="font-weight: bold; color: #2c3e50;">Categoría: Sistemas Operativos</p>
-            <a href="detalle.html">Ver detalle</a>
-        </article>
-        <hr>
-
-        <article>
-            <h3>Proyecto: Lista de Nombres Ordenada</h3>
-            <img src="C:\Users\dory\Downloads\programacion visual\imagenes" alt="Ordenamiento de Datos">
-            <p>Descripción breve: Un ejercicio para guardar nombres y que se acomoden solos alfabéticamente.</p>
-            <p style="font-weight: bold; color: #2c3e50;">Categoría: Programación</p>
-            <a href="detalle.html">Ver detalle</a>
-        </article>
-        <hr>
-        </div>
-     </section>
-    </main>
 </body>
 </html>
