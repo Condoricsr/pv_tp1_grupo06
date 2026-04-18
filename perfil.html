@@ -5,44 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de Usuario</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        
+        .contenedor-perfiles {
+            display: flex;        
+            flex-wrap: wrap;       
+            justify-content: center; 
+            gap: 20px;            
+            padding: 20px;
+        }
+
+        .perfil {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .avatar { font-size: 60px; margin-bottom: 10px; }
+        .rol-docente { color: #d35400; font-weight: bold; }
+        .rol-alumno { color: #2980b9; font-weight: bold; }
+        h2, p { margin: 5px 0; }
+    </style>
 </head>
 <body>
-   <h1>Directorio del Equipo</h1>
+    <header>
+        <h1>Directorio del Equipo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="perfil.html">Mi Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="perfil">
-        <div class="avatar">👩‍🏫</div>
-        <h2>Elena Rojas</h2>
-        <p class="rol-docente">Docente</p>
-        <p>Ingeniería de Software</p>
-    </div>
+    <main>
+        <div class="contenedor-perfiles">
+            <div class="perfil">
+                <div class="avatar">👩‍🏫</div>
+                <h2>Elena Rojas</h2>
+                <p class="rol-docente">Docente</p>
+                <p>Ingeniería de Software</p>
+            </div>
 
-    <div class="perfil">
-        <div class="avatar">👨‍🏫</div>
-        <h2>Martín Suarez</h2>
-        <p class="rol-docente">Docente</p>
-        <p>Bases de Datos</p>
-    </div>
+            <div class="perfil">
+                <div class="avatar">👨‍🏫</div>
+                <h2>Martín Suarez</h2>
+                <p class="rol-docente">Docente</p>
+                <p>Bases de Datos</p>
+            </div>
 
-    <div class="perfil">
-        <div class="avatar">👩‍💻</div>
-        <h2>Sofía Castro</h2>
-        <p class="rol-alumno">Alumna</p>
-        <p>Frontend</p>
-    </div>
+            <div class="perfil">
+                <div class="avatar">👩‍💻</div>
+                <h2>Sofía Castro</h2>
+                <p class="rol-alumno">Alumna</p>
+                <p>Frontend</p>
+            </div>
 
-    <div class="perfil">
-        <div class="avatar">👨‍💻</div>
-        <h2>Diego Torres</h2>
-        <p class="rol-alumno">Alumno</p>
-        <p>Backend</p>
-    </div>
+            <div class="perfil">
+                <div class="avatar">👨‍💻</div>
+                <h2>Diego Torres</h2>
+                <p class="rol-alumno">Alumno</p>
+                <p>Backend</p>
+            </div>
 
-    <div class="perfil">
-        <div class="avatar">👩‍🎓</div>
-        <h2>Valentina Paz</h2>
-        <p class="rol-alumno">Alumna</p>
-        <p>Análisis de Datos</p>
-    </div>
+            <div class="perfil">
+                <div class="avatar">👩‍🎓</div>
+                <h2>Valentina Paz</h2>
+                <p class="rol-alumno">Alumna</p>
+                <p>Análisis de Datos</p>
+            </div>
+        </div>
+    </main>
 
+    <footer>
+        <p>Programación Visual 2026 - Grupo 06</p>
+    </footer>
 </body>
 </html>
