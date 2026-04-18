@@ -36,64 +36,47 @@ nav {
 }
 
 nav ul {
-    display: flex; /* Flexbox activado */
+    display: flex; 
     justify-content: center;
     list-style: none;
     gap: 20px;
     padding: 10px;
 }
 
-/* Interactividad (:hover, :active) */
+/* --- ESTA ES LA PARTE QUE AGREGAMOS/CORREGIMOS --- */
 nav a {
     text-decoration: none;
     color: var(--color-primario);
     font-weight: bold;
     transition: 0.3s;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 nav a:hover {
     color: var(--color-secundario);
+    background-color: rgba(52, 152, 219, 0.1);
 }
 
-main { grid-area: main; padding: 20px; }
-footer { grid-area: footer; text-align: center; padding: 1rem; background: #ddd; }
- body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 20px;
-        }
+nav a:focus {
+    outline: 2px solid var(--color-secundario);
+    background-color: rgba(52, 152, 219, 0.1);
+}
 
-        /* Cada tarjeta de perfil */
-        .perfil {
-            background-color: white;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 10px;
-            width: 220px;
-            display: inline-block; /* Los coloca uno al lado del otro */
-            text-align: center;
-        }
+nav a:active {
+    background-color: var(--color-secundario);
+    color: white;
+}
+/* ------------------------------------------------ */
 
-        /* Tamaño grande para el emoji */
-        .avatar {
-            font-size: 60px;
-            margin-bottom: 10px;
-        }
+main { 
+    grid-area: main; 
+    padding: 20px; 
+}
 
-        /* Colores simples para diferenciar roles */
-        .rol-docente {
-            color: #d35400; /* Naranja */
-            font-weight: bold;
-        }
-
-        .rol-alumno {
-            color: #2980b9; /* Azul */
-            font-weight: bold;
-        }
-
-        /* Corregimos aquí también: aplicamos el margen al h2 en lugar del h3 */
-        h2, p {
-            margin: 5px 0;
-        }
+footer { 
+    grid-area: footer; 
+    text-align: center; 
+    padding: 1rem; 
+    background: #ddd; 
+}
